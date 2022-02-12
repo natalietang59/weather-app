@@ -1,0 +1,71 @@
+<style>
+    body{
+background:#fff;
+padding:100px all;
+position: absolute;
+display:flex;
+align-items: center;
+width:100%;
+height:100%;
+    }
+.whole{
+        background: LINEAR-GRADIENT(rgb(252, 2, 69), rgb(234, 28, 83), rgb(234, 79, 121));
+        padding: 60px 20px;
+position:relative;
+display:block;
+margin: 0 auto;
+    }
+    .city{
+        margin:0 auto;
+        display:block;
+        margin-bottom: 20px;
+    }
+    .newyear{
+        margin:0 auto;
+        display:block;
+        width: 120px;
+    }
+    .search, button{
+         margin:0 auto;
+        display:block;
+        margin-bottom: 40px;
+        color:black;
+        background-color:rgb(247, 173, 190) ;
+        transition: 20ms ease-in-out;
+        border-radius: 20px;
+        border-color: black;
+    }
+    .temperature, .weather-icon{
+        font-size: 40px;
+      text-align:center;
+      font-weight: 500;
+    }
+    .location, .humidity{
+        font-size: 20px;
+        text-align:center;
+    }
+
+    .search:hover{
+        background:rgb(252, 2, 69);
+    }
+    .container{
+display:block;
+position:relative;
+margin: 0 auto;
+padding-bottom: 20px;
+    }
+    .col{
+        margin:0auto;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    }
+    .col.week{
+        font-weight:bold;
+    }
+    .wishes{
+        text-align:center;
+        font-size: 30px;
+        font-family: 'Noto Sans TC', sans-serif;
+        padding-top:40px;
+    }
+</style>
