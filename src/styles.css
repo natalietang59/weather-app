@@ -9,11 +9,12 @@ width:100%;
 height:100%;
     }
 .whole{
-        background: LINEAR-GRADIENT(rgb(252, 2, 69), rgb(234, 28, 83), rgb(234, 79, 121));
-        padding: 60px 20px;
-position:relative;
+background: LINEAR-GRADIENT(rgb(252, 2, 69), rgb(234, 28, 83), rgb(234, 79, 121));
+padding: 20px;
+max-width:600px;
 display:block;
-margin: 0 auto;
+margin: 30px auto;
+border:1px solid #dadde1;
     }
     .city{
         margin:0 auto;
@@ -25,8 +26,9 @@ margin: 0 auto;
         display:block;
         width: 120px;
     }
-    .search, button{
-         margin:0 auto;
+    .search, #current-location-button{
+        margin:0 auto;
+        width: 250px;
         display:block;
         margin-bottom: 40px;
         color:black;
