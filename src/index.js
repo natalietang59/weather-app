@@ -29,6 +29,7 @@ function showTemperature(response) {
   let location = document.querySelector(".place");
   location.innerHTML = `${response.data.name}`;
   let showTemp = document.querySelector(".displayTemp");
+  celsiusTemp = response.data.main.temp;
   showTemp.innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -44,7 +45,6 @@ function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=edcf3057f46d5bddac96b0cfadd71703&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -53,3 +53,21 @@ currentButton.addEventListener(
   "click",
   navigator.geolocation.getCurrentPosition(showPosition)
 );
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let temperatureElement = document.querySelector(".displayTemp");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector(".displayTemp");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+let celsiusTemp = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheitLink");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsiusLink");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
