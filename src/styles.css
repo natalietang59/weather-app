@@ -27,10 +27,10 @@ border:1px solid #dadde1;
         width: 120px;
     }
     .search, #current-location-button{
-        margin:0 auto;
-        width: 250px;
+        margin-top: 40px;
+        margin-left:30px;
+        width: 150px;
         display:block;
-        margin-bottom: 40px;
         color:black;
         background-color:rgb(247, 173, 190) ;
         transition: 20ms ease-in-out;
@@ -59,9 +59,11 @@ padding-bottom: 20px;
    
     .wishes{
         text-align:center;
-        font-size: 30px;
+        font-size: 15px;
         font-family: 'Noto Sans TC', sans-serif;
         padding-top:40px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .weather-forecast{
         margin-top:20px;
