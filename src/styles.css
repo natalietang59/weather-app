@@ -56,18 +56,26 @@ position:relative;
 margin: 0 auto;
 padding-bottom: 20px;
     }
-    .col{
-        margin:0auto;
-        text-align: center;
-        font-family: 'Inconsolata', monospace;
-    }
-    .col.week{
-        font-weight:bold;
-    }
+   
     .wishes{
         text-align:center;
         font-size: 30px;
         font-family: 'Noto Sans TC', sans-serif;
         padding-top:40px;
+    }
+    .weather-forecast{
+        margin-top:20px;
+        text-align:center;
+        color:#000;
+    }
+    .weather-forecast-date{
+        font-size:16px;
+        opacity:0.5;
+    }
+    .weather-forecast-temperatures-min{
+        opacity:0.5;
+    }
+    .weather-forecast-temperatures{
+        font-size:13px;
     }
 </style>
