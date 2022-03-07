@@ -37,10 +37,14 @@ border:1px solid #dadde1;
         border-radius: 20px;
         border-color: black;
     }
-    .temperature, .weather-icon{
-        font-size: 40px;
+    .temperature,.weather-icon{
+   
       text-align:center;
-      font-weight: 500;
+    
+    }
+    .displayTemp{
+  font-weight: 500;
+       font-size: 60px;
     }
     .location, .humidity{
         font-size: 20px;

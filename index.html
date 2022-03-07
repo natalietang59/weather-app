@@ -18,7 +18,6 @@
 </head>
 <body>
   <div class="whole">
-  
     <form class="search-form" id="search-form">
   <input class="city" type="text" placeholder="Enter a city" />
   <div class="container">
@@ -32,7 +31,7 @@
     </div>
   <div class="container">
 <div class="row">
-  <div class="col-6 temperature"><span class="displayTemp">19 </span><a href="#" id="celsiusLink" class="active">°C</a> | <a href="#" id="fahrenheitLink">°F</a></div>
+  <div class="col-6 temperature"><span class="displayTemp">19 </span><span class="units">°C </span></div>
   <div class="col-6 weather-icon">
       <img src="" alt="" id="weatherIcon"/>
   </div> 
@@ -41,9 +40,9 @@
   <div class="col-6 location"><div class="place">Hong Kong</div>
      <span id="time"> Tuesday 12:50</span>
   </div>
-  <div class="col-6 humidity">Humidity: <span id="humidity">50</span>%
+  <div class="col-6 humidity">Humidity: <strong id="humidity">50</strong>%
       <br/>
-      Wind: <span id="wind">21</span>km/h 
+      Wind: <strong id="wind">21</strong>km/h 
   </div>
 </div>
 </div>

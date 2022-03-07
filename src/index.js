@@ -60,28 +60,10 @@ function showPosition(position) {
 }
 
 let currentButton = document.querySelector("#current-location-button");
-currentButton.addEventListener(
-  "click",
-  navigator.geolocation.getCurrentPosition(showPosition)
-);
-function displayFahrenheitTemp(event) {
+currentButton.addEventListener("click", function (event) {
   event.preventDefault();
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  let temperatureElement = document.querySelector(".displayTemp");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-function displayCelsiusTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector(".displayTemp");
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
-}
-let celsiusTemp = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheitLink");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
-
-let celsiusLink = document.querySelector("#celsiusLink");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
+  navigator.geolocation.getCurrentPosition(showPosition);
+});
 
 function displayForecast(response) {
   let forecast = response.data.daily;
